@@ -1,0 +1,82 @@
+/* Spacing */
+.mt-1 {
+    margin-top: 4px;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mb-1 {
+    margin-bottom: 4px;
+}
+
+.p-2 {
+    padding: 8px;
+}
+
+/* Flexbox & Layout */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* Typography */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Colors */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+/* Sizing */
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* Display */
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* Borders & Effects */
+.rounded {
+    border-radius: 8px;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}

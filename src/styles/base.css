@@ -1,0 +1,64 @@
+/* ---------- Base layout ---------- */
+html,
+body {
+    height: 100%;
+    font-family: var(--font-base);
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* ---------- Text defaults ---------- */
+p {
+    color: var(--color-text);
+}
+
+small {
+    color: var(--color-muted);
+}
+
+/* ---------- Links ---------- */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .9;
+}
+
+/* ---------- Images ---------- */
+img {
+    border-radius: var(--radius-sm);
+}
+
+/* ---------- Focus accesible ---------- */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ---------- Container helper ---------- */
+.container {
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding-inline: var(--space-md);
+}
+
+/* ---------- Buttons base ---------- */
+button {
+    border-radius: var(--radius-md);
+}
+
+/* Disabled */
+button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

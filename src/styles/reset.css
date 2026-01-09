@@ -1,0 +1,114 @@
+/* ---------- Reset global ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Evita zoom raro de Safari al rotar */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ---------- Base tipográfica ---------- */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin-block: 1.5rem 0.5rem;
+}
+
+/* Paragraphs */
+p {
+    margin-block: 1rem;
+}
+
+/* Media */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Forms */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* Buttons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+}
+
+/* Lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Optional root defaults */
+:root {
+    scroll-behavior: auto;
+    /* usa smooth si NO hay GSAP */
+}
+
+/* ---------- Base ---------- */
+html,
+body {
+    height: 100%;
+    font-family: var(--font-base);
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Focus accesible */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
